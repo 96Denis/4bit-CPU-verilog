@@ -10,27 +10,6 @@ Built from scratch, module by module, with individual testbenches for each compo
 - Harvard architecture (separate instruction and data memory)
 - Single-cycle execution
 
-## Block Diagram
-```
-        clk, rst
-           |
-    [Program Counter] --pc--> [ROM] --instruction-->  [Decoder]
-                                                          |
-                                          alu_opcode, reg_dst,
-                                          reg_src1, reg_src2,
-                                          write_enable, mem_read, mem_write
-                                                          |
-                                               +----------+----------+
-                                               |                     |
-                                        [Register File]            [RAM]
-                                         data1, data2                |
-                                               |              mem_read_data
-                                               v
-                                            [ALU]
-                                               |
-                                           alu_result
-```
-
 ## Modules
 | Module | Description |
 |--------|-------------|
