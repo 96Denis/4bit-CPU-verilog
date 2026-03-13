@@ -1,0 +1,30 @@
+# Compiled assembler binaries
+assembler/assembler.exe
+assembler/assembler
+assembler/*.o
+
+# VS Code
+.vscode/
+
+# Simulation output files
+*.vcd
+*.out
+dump.vcd
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Vivado (if you ever use it)
+*.jou
+*.log
+*.str
+*.xpr
+*.bit
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
